@@ -1,7 +1,5 @@
-@echo off
-bcdedit /set disabledynamictick yes
+﻿bcdedit /set disabledynamictick yes
 bcdedit /set useplatformtick yes
-bcdedit /timeout 3
 bcdedit /set nx OptIn
 bcdedit /set bootux disabled
 bcdedit /set bootmenupolicy legacy
