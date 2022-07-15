@@ -1,4 +1,4 @@
-﻿:: Take ownership of Desktop
+﻿:: Usage: GDelete.cmd folder you wish to delete
 takeown /f "%1" /r /d y
 icacls "%1" /inheritance:r
 icacls "%1" /inheritance:e /grant:r %username%:(OI)(CI)F /t /l /q /c
